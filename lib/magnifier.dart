@@ -94,8 +94,8 @@ class _MagnifierState extends State<Magnifier> {
         widget.child,
         if (widget.enabled)
           Positioned(
-            left: _magnifierPosition.dx,
-            top: _magnifierPosition.dy,
+            left: _magnifierPosition.dx - 40,
+            top: _magnifierPosition.dy - 40,
             child: ClipRRect(
               borderRadius: _radius,
               child: GestureDetector(
